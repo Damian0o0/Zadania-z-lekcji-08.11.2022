@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Podaj tekst");
+        String tekst = sc.nextLine();
+        zad1(tekst);
+    }
+    static void zad1(String tekst){
+        tekst=tekst.toUpperCase();
+        Random r = new Random();
+        while (tekst.length() < 20) {
+            char jd = (char) (r.nextInt(26) + 'A');
+            tekst = tekst + jd;
+        }
+        System.out.println(tekst);
+    }
+}

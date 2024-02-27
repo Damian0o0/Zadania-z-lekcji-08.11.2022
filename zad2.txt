@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Twoja liczba:");
+        int liczba= sc.nextInt();
+        System.out.println("Dzielniki twojej liczby: " + liczba;
+        Zad2(liczba);
+    }
+    static void Zad2(int jd)
+    {
+        for (int i=1;i<=jd;i++)
+            if (jd%i==0)
+                System.out.printf("%d ",i);
+
+   }
+}
